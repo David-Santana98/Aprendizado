@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenho do Arco</title>
+</head>
+<body>
+    <canvas id="meu_canvas" width="300" height="300"></canvas>
+        <script>
+        var canvas = document.getElementById('meu_canvas');
+        var context = canvas.getContext('2d');    
+        // context.arc (
+        //     50, // X (centro)
+        //     50, // Y (centro)
+        //     40, // Raio
+        //     90*Math.PI/180, // Início
+        //     270*Math.PI/180, // Término
+        //     false // Sentido
+        // );
+        context.fillStyle = 'gray';
+        context.strokeStyle = 'black';
+        context.lineWidth = 2;
+
+        context.beginPath();
+        context.arc(50, // X (centro)
+            50, // Y (centro)
+            40, // Raio
+            90*Math.PI/180, // Início
+            270*Math.PI/180, // Término
+            true);
+            context.fill();
+            context.stroke();
+        </script>   
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+</head>
+<body>
+    <canvas id="meu_canvas" width="400" height="400"></canvas>
+    <script>
+        // Referenciando o Canvas
+        var canvas = document.getElementById('meu_canvas');
+
+        // Obtendo o contexto gráfico
+        var context = canvas.getContext('2d');
+
+        // preenchimento de cor
+        context.fillStyle = 'green';
+        context.fillRect(100, 20, 140, 180);
+
+        // Desenhar um retângulo
+        context.lineWidth = 4;
+        context.strokeStyle = 'white'
+        context.strokeRect(100, 85, 25, 50);
+        context.lineWidth = 3;
+        context.strokeRect(100, 50, 55, 120);
+        
+        context.lineWidth = 3;
+        context.strokeStyle = 'white';
+        context.fiilStyle = 'gray';
+        context.beginPath();
+        context.arc(156, 110, 30, 90*Math.PI/180, 270*Math.PI/180,
+        true);
+        context.fill();
+        context.stroke();
+
+
+
+
+    </script>
+        
+     
+   
+</body>
+</html>
