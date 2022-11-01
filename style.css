@@ -1,5 +1,6 @@
 body{
-    margin: 40px
+    margin: 40px;
+    background: blue; 
 }
 .botao {
     padding: 15px 20px;
