@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Desenho do Arco</title>
 </head>
 <body>
-    <canvas id="meu_canvas" width="300" height="300"></canvas>
+    <canvas id="meu_canvas" width="400" height="400"></canvas>
         <script>
         var canvas = document.getElementById('meu_canvas');
         var context = canvas.getContext('2d');    
-        // context.arc (
-        //     50, // X (centro)
-        //     50, // Y (centro)
-        //     40, // Raio
-        //     90*Math.PI/180, // Início
-        //     270*Math.PI/180, // Término
-        //     false // Sentido
-        // );
-        context.fillStyle = 'gray';
+     
+        context.fillStyle = 'red';
         context.strokeStyle = 'black';
-        context.lineWidth = 2;
+        context.lineWidth = 3;
 
         context.beginPath();
-        context.arc(50, // X (centro)
-            50, // Y (centro)
-            40, // Raio
+        context.arc(100, // X (centro)
+            100, // Y (centro)
+            80, // Raio
             90*Math.PI/180, // Início
-            270*Math.PI/180, // Término
+            290*Math.PI/180, // Término
             true);
             context.fill();
             context.stroke();
-        </script>   
+
+        context.fillStyle = 'black';
+        context.strokeStyle = 'red';
+        context.lineWidth = 3;
+
+        context.beginPath();
+        context.arc(100, // X (centro)
+            100, // Y (centro)
+            80, // Raio
+            90*Math.PI/180, // Início
+            250*Math.PI/180, // Término
+            false);
+            context.fill();
+            context.stroke();
+        </script>
+        <br>  
+         <button class="botao"><a href="./desenhopath.html">Desenho Estrela</a></button>
+         <button class="botao"><a href="./index.html">Desenho inicial</a></button> 
 </body>
 </html>
