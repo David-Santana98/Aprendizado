@@ -1,3 +1,3 @@
 # canvas
 
-## *aprendendo o básico sobre canvas*
+## *aprendendo o básico sobre canvas e PHP*
